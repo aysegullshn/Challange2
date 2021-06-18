@@ -1,0 +1,9 @@
+.works{
+  display: grid;
+  place-items: center;
+  width:100%;
+  height: calc(100vh - 60px);
+  .works-container{
+    width: 500px;
+  }
+}

@@ -1,0 +1,10 @@
+.comments {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: calc(100vh - 60px);
+  .comments-container{
+    width: 500px;
+    height: auto;
+  }
+}

@@ -1,0 +1,22 @@
+<div class="comments">
+  <div class="comments-container">
+    <h3>Yorum Yap</h3>
+    <form novalidate>
+      <div class="mb-3">
+        <input type="text" class="form-control" id="name" placeholder="Adınız" [formControl]="name" />
+      </div>
+      <div class="mb-3">
+        <textarea class="form-control" id="comment" rows="3" placeholder="Yorumunuz" [formControl]="comment"></textarea>
+      </div>
+      <div class="d-grid">
+        <button type="button" class="btn btn-primary" (click)="commentSubmit()">Yorum Yap</button>
+      </div>
+    </form>
+    <ul class="p-0 m-0">
+      <li *ngFor="let com of comments">
+        <h3>{{com.name}}</h3>
+        <p>{{com.comment}}</p>
+      </li>
+    </ul>
+  </div>
+</div>
